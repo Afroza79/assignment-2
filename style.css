@@ -8,14 +8,17 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  background-color: #000;
+}
 header {
   background: linear-gradient(
     180deg,
     rgb(17, 17, 17),
-    rgb(42 41 41 / 84%) 100%
+    rgb(26 25 25 / 84%) 100%
   );
   padding: 57px 190px 0px 190px;
-  margin-bottom: 100px;
+  margin-bottom: 25px;
 }
 #navbar {
   display: flex;
@@ -157,6 +160,99 @@ header {
 .circle i {
   transform: translate(4%, 49%);
   font-size: 15px;
+}
+
+/* Change your habit */
+#change-habit {
+  padding: 57px 190px 0px 190px;
+  margin-bottom: 25px;
+}
+.change-habit h1 {
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 14px;
+}
+.change-habit .main-head-conent {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  width: 47%;
+  margin: auto;
+  margin-bottom: 54px;
+}
+.four-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.four-cards img {
+  width: 175px;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.1);
+}
+.four-cards h3 {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 30px;
+}
+.four-cards p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* Run an Extra */
+#run-extra {
+  padding: 57px 190px 0px 190px;
+  margin-bottom: 25px;
+}
+.run-extra {
+  display: flex;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  padding: 25px 40px;
+  align-items: center;
+}
+.right-image {
+    width: 465px;
+    height: 245px;
+    background-image: url(./images/run.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 18px;
+}
+.left-content h1 {
+  font-size: 48px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 14px;
+  width: 50%;
+}
+.left-content p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 14px;
+  width: 64%;
+  line-height: 25px;
+  margin-bottom: 28px;
+}
+.left-content button{
+    border-radius: 2.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    width: 200px;
+    height: 47px;
+    background-color: rgb(230, 83, 60);
 }
 
 /* Responsive */
