@@ -11,6 +11,7 @@
 body {
   background-color: #000;
 }
+
 header {
   background: linear-gradient(
     180deg,
@@ -24,6 +25,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 32px;
+  align-items: center;
 }
 #navbar ul {
   display: flex;
@@ -190,7 +192,7 @@ header {
   gap: 24px;
 }
 .four-cards img {
-  width: 175px;
+  width: 152px;
   border-radius: 50%;
   border: 5px solid rgba(255, 255, 255, 0.1);
 }
@@ -220,13 +222,13 @@ header {
   align-items: center;
 }
 .right-image {
-    width: 465px;
-    height: 245px;
-    background-image: url(./images/run.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 18px;
+  width: 465px;
+  height: 245px;
+  background-image: url(./images/run.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 18px;
 }
 .left-content h1 {
   font-size: 48px;
@@ -242,23 +244,24 @@ header {
   line-height: 25px;
   margin-bottom: 28px;
 }
-.left-content button{
-    border-radius: 2.5rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    font-weight: 600;
-    width: 200px;
-    height: 47px;
-    background-color: rgb(230, 83, 60);
+.left-content button {
+  border-radius: 2.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+  width: 200px;
+  height: 47px;
+  background-color: rgb(230, 83, 60);
 }
 
 /* Responsive */
 @media only screen and (max-width: 576px) {
   header {
     padding: 57px 29px 0px 28px;
+    margin-bottom: 0px;
   }
   #navbar {
     align-items: center;
@@ -320,5 +323,82 @@ header {
     font-size: 14px;
     width: 135px;
     height: 44px;
+  }
+
+  #change-habit {
+    padding: 29px 29px 0px 29px;
+    margin-bottom: 25px;
+  }
+  .change-habit h1 {
+    font-size: 32px;
+  }
+  .change-habit .main-head-conent {
+    width: 95%;
+  }
+  .four-cards {
+    flex-direction: column;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .four-cards p {
+    width: 65%;
+  }
+  #run-extra {
+    padding: 29px 29px 0px 29px;
+    margin-bottom: 25px;
+  }
+  .run-extra {
+    flex-direction: column;
+  }
+  .left-content h1 {
+    font-size: 32px;
+    width: 78%;
+  }
+  .left-content p {
+    width: 100%;
+  }
+  .left-content button {
+    width: 100%;
+  }
+  .left-content {
+    margin-bottom: 24px;
+  }
+  .right-image {
+    width: 100%;
+    height: 170px;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1350px) {
+  header {
+    padding: 57px 90px 0px 44px;
+  }
+  .left h1 {
+    font-size: 70px;
+    line-height: 5rem;
+  }
+  .left button {
+    font-size: 15px;
+    width: 157px;
+    height: 42px;
+  }
+  .up {
+    width: 166px;
+  }
+  #change-habit {
+    padding: 57px 44px 0px 44px;
+  }
+  #run-extra {
+    padding: 57px 44px 0px 44px;
+  }
+  .left-content h1 {
+    width: 70%;
+  }
+  .left-content button {
+    width: 160px;
+    height: 42px;
   }
 }
